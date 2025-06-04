@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Módulo 3 – Ejercicios clase día 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+body {
+    background-color: #ffccff; font-family: Arial;
+}
+h1 {
+    text-align: center; text-transform: uppercase;
+    color: #9d2cac;
+}
+nav {
+    background-color: #e0b3ff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #9d2cac;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+/* Submenu styles */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #f3e6ff;
+    padding: 10px 0;
+    min-width: 150px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+    flex-direction: column;
+}
+nav ul li:hover > ul {
+    display: flex;
+}
+nav ul li ul li {
+    margin: 0;
+    padding: 0 20px;
+    white-space: nowrap;
+}
+nav ul li ul li a {
+    color: #6a1b9a;
+    font-size: 1em;
+    font-weight: normal;
+}
+nav ul li ul li a:hover {
+    color: #9d2cac;
+    text-decoration: underline;
+}
+p {
+    background: #f3e6ff;
+    color: #6a1b9a;
+    font-size: 1.2em;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(157,44,172,0.08);
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+}
+.preguntas {
+    background: #fff0fa;
+    border: 2px solid #e0b3ff;
+    border-radius: 12px;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    box-shadow: 0 2px 8px rgba(157,44,172,0.07);
+}
+.preguntas h2 {
+    color: #9d2cac;
+    text-align: center;
+    margin-bottom: 18px;
+}
+.preguntas ul {
+    list-style: disc inside;
+    padding-left: 0;
+}
+.preguntas li {
+    margin-bottom: 15px;
+    color: #6a1b9a;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+.preguntas code {
+    background: #f3e6ff;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 0.95em;
+}
+.resaltado {
+    background: #ffe6fa;
+    border-left: 4px solid #9d2cac;
+    padding: 10px 15px;
+    display: block;
+    margin: 10px 0;
+    color: #6a1b9a;
+    font-size: 1.05em;
+    border-radius: 6px;
+}
+</style>
+</head>
+<body>
+<h1>Curso de Front</h1>
+
+<nav>
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li>
+            <a href="#">Ejercicios</a>
+            <ul>
+                <li><a href="#">Ejercicio 1</a></li>
+                <li><a href="#">Ejercicio 2</a></li>
+                <li><a href="#">Ejercicio 3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Recursos</a>
+            <ul>
+                <li><a href="#">Documentación</a></li>
+                <li><a href="#">Enlaces útiles</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+</nav>
+
+<p>Preguntas y respuestas</p>
+
+<section class="preguntas">
+    <h2>Preguntas del Curso</h2>
+    <ul>
+        <li><strong>¿Qué es el desarrollo web?</strong> <br>
+    <span class="resaltado">
+    <a href="https://www.codigosinformaticos.com/que-es-el-desarrollo-web/" target="_blank" style="color:inherit; text-decoration:none;">
+        El desarrollo web es el proceso de creación, construcción y mantenimiento de sitios web o aplicaciones web. Involucra diversas tecnologías y disciplinas, desde la programación y el diseño hasta la gestión de bases de datos y la seguridad en línea.
+    </a>
+</span>
+</li>
+        <li><strong>Diferencias entre Front-End, Back-End y Fullstack.</strong> <br>
+    <span class="resaltado">
+    <a href="https://www.codigosinformaticos.com/que-es-el-desarrollo-web/" target="_blank" style="color:inherit; text-decoration:none;">
+        Existen tres principales tipos de desarrollo web:<br><br>
+        Desarrollo Front-End: Se enfoca en la parte visual y en la interacción del usuario con la página.<br>
+        Desarrollo Back-End: Se encarga de la lógica, el almacenamiento de datos y la seguridad.<br>
+        Desarrollo Full Stack: Combinación de ambos, permitiendo a un programador manejar tanto el diseño como la funcionalidad.
+    </a>
+    </span>
+</li>
+<!-- Existen tres principales tipos de desarrollo web:
+
+Desarrollo Front-End: Se enfoca en la parte visual y en la interacción del usuario con la página.
+Desarrollo Back-End: Se encarga de la lógica, el almacenamiento de datos y la seguridad.
+Desarrollo Full Stack: Combinación de ambos, permitiendo a un programador manejar tanto el diseño como la funcionalidad. -->
+<li><strong>¿Qué es HTML y cómo ha evolucionado hasta HTML5?</strong> <br>
+    <span class="resaltado">
+    <a href="https://www.codigosinformaticos.com/que-es-html/" target="_blank" style="color:inherit; text-decoration:none;">        
+        HTML (HyperText Markup Language) es un lenguaje esencial en la programación: Define la estructura del contenido.
+                <!-- HTML (HyperText Markup Language) es un lenguaje esencial en la programación: Define la estructura del contenido. -->
+    </a>
+    </span>   
+</li>
+<li><strong>El rol del navegador web.</strong> <br>
+    <span class="resaltado">
+    <a href="https://www.codigosinformaticos.com/que-es-html/" target="_blank" style="color:inherit; text-decoration:none;">        
+        HTML (HyperText Markup Language) es un lenguaje esencial en la programación: Define la estructura del contenido.
+                <!-- HTML (HyperText Markup Language) es un lenguaje esencial en la programación: Define la estructura del contenido. -->
+    </a>
+    </span>   
+</li>
+<li><strong>¿Qué es HTML y cómo ha evolucionado hasta HTML5?</strong> <br>
+    <span class="resaltado">
+    <a href="https://www.codigosinformaticos.com/que-es-html/" target="_blank" style="color:inherit; text-decoration:none;">        
+        HTML (HyperText Markup Language) es un lenguaje esencial en la programación: Define la estructura del contenido.
+                <!-- HTML (HyperText Markup Language) es un lenguaje esencial en la programación: Define la estructura del contenido. -->
+    </a>
+    </span>   
+</li>
+<li><strong>¿Qué es HTML y cómo ha evolucionado hasta HTML5?</strong> <br>
+    <span class="resaltado">
+    <a href="https://www.codigosinformaticos.com/que-es-html/" target="_blank" style="color:inherit; text-decoration:none;">        
+        HTML (HyperText Markup Language) es un lenguaje esencial en la programación: Define la estructura del contenido.
+                <!-- HTML (HyperText Markup Language) es un lenguaje esencial en la programación: Define la estructura del contenido. -->
+    </a>
+    </span>   
+</li>
+<li><strong>¿Qué es HTML y cómo ha evolucionado hasta HTML5?</strong> <br>
+    <span class="resaltado">
+    <a href="https://www.codigosinformaticos.com/que-es-html/" target="_blank" style="color:inherit; text-decoration:none;">        
+        HTML (HyperText Markup Language) es un lenguaje esencial en la programación: Define la estructura del contenido.
+                <!-- HTML (HyperText Markup Language) es un lenguaje esencial en la programación: Define la estructura del contenido. -->
+    </a>
+    </span>   
+</li>
+<li><strong>¿Qué es HTML y cómo ha evolucionado hasta HTML5?</strong> <br>
+    <span class="resaltado">
+    <a href="https://www.codigosinformaticos.com/que-es-html/" target="_blank" style="color:inherit; text-decoration:none;">        
+        HTML (HyperText Markup Language) es un lenguaje esencial en la programación: Define la estructura del contenido.
+                <!-- HTML (HyperText Markup Language) es un lenguaje esencial en la programación: Define la estructura del contenido. -->
+    </a>
+    </span>   
+</li>
+
+
+
+    </ul>
+</section>
+
+</body>
+</html>

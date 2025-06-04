@@ -1,0 +1,115 @@
+
+body {
+    background-color: #ffccff; font-family: Arial;
+}
+h1 {
+    text-align: center; text-transform: uppercase;
+    color: #9d2cac;
+}
+nav {
+    background-color: #e0b3ff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #9d2cac;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+/* Submenu styles */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #f3e6ff;
+    padding: 10px 0;
+    min-width: 150px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+    flex-direction: column;
+}
+nav ul li:hover > ul {
+    display: flex;
+}
+nav ul li ul li {
+    margin: 0;
+    padding: 0 20px;
+    white-space: nowrap;
+}
+nav ul li ul li a {
+    color: #6a1b9a;
+    font-size: 1em;
+    font-weight: normal;
+}
+nav ul li ul li a:hover {
+    color: #9d2cac;
+    text-decoration: underline;
+}
+p {
+    background: #f3e6ff;
+    color: #6a1b9a;
+    font-size: 1.2em;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(157,44,172,0.08);
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+}
+.preguntas {
+    background: #fff0fa;
+    border: 2px solid #e0b3ff;
+    border-radius: 12px;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    box-shadow: 0 2px 8px rgba(157,44,172,0.07);
+}
+.preguntas h2 {
+    color: #9d2cac;
+    text-align: center;
+    margin-bottom: 18px;
+}
+.preguntas ul {
+    list-style: disc inside;
+    padding-left: 0;
+}
+.preguntas li {
+    margin-bottom: 15px;
+    color: #6a1b9a;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+.preguntas code {
+    background: #f3e6ff;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 0.95em;
+}
+.resaltado {
+    background: #ffe6fa;
+    border-left: 4px solid #9d2cac;
+    padding: 10px 15px;
+    display: block;
+    margin: 10px 0;
+    color: #6a1b9a;
+    font-size: 1.05em;
+    border-radius: 6px;
+}
+
