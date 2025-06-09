@@ -33,6 +33,11 @@ h1 {
     background-color: #fff;
 }
 
+h2 {
+    font-family: 'Brush Script MT', 'Pacifico', 'Dancing Script', cursive, Arial, sans-serif;
+    font-size: 3em;
+}
+
 nav ul {
     justify-content: center;
     list-style-type: none;
@@ -124,6 +129,7 @@ footer {
     font-weight: bold;
     color: #b22222; /* rojo vintage */
     margin-bottom: 3px;
+}
 .contacto-form textarea {
     width: 100%;
     padding: 8px;
