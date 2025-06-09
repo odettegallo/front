@@ -1,6 +1,6 @@
 body {
-    font-family: "proxima",sans-serif;
-    font-size: 0.97em;
+    font-family: "Segoe UI", "Arial Rounded MT Bold", "Quicksand", Arial, sans-serif;
+    font-size: 1.1em;
     margin: 0;
     background-color: #222; /* negro vintage */
     color: #fff; /* blanco */
@@ -43,6 +43,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto 20px auto;
     background: #444; /* gris oscuro */
     border-bottom: 3px solid #b22222; /* rojo vintage */
@@ -81,15 +82,17 @@ nav ul .separator {
     text-align: center;
     margin: 20px;
     color: #fff;
+    padding: 0 10px;
 }
 
 .productos img {
-    width: 300px;
-    height: 300px;
+    width: 90vw;
+    max-width: 300px;
+    height: auto;
     object-fit: contain;
     border-radius: 10px;
-    margin: 10px;
-    border-radius: 10px;
+    margin: 10px auto;
+    display: block;
     box-shadow: 0 2px 8px rgba(34,34,34,0.15);
     border: 3px solid #b22222; /* rojo vintage */
     background: #ffffff;
@@ -130,6 +133,8 @@ footer {
     color: #b22222; /* rojo vintage */
     margin-bottom: 3px;
 }
+
+.contacto-form input,
 .contacto-form textarea {
     width: 100%;
     padding: 8px;
@@ -164,7 +169,15 @@ footer {
     color: #fff;
 }
 
+/* --- Responsive styles for mobile --- */
 @media (max-width: 700px) {
+    h1 {
+        font-size: 2em;
+        padding: 8px 10px;
+    }
+    h2, h3 {
+        font-size: 1.3em;
+    }
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -189,5 +202,23 @@ footer {
     }
     nav ul .separator {
         display: none;
+    }
+    .bienvenida, .productos {
+        margin: 10px;
+        padding: 0 5vw;
+    }
+    .productos img {
+        width: 95vw;
+        max-width: 320px;
+        height: auto;
+        margin: 10px auto;
+        display: block;
+    }
+    .contacto-form {
+        padding: 15px 5vw;
+    }
+    footer {
+        padding: 10px 5vw;
+        font-size: 0.95em;
     }
 }
