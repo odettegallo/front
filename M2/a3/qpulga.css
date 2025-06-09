@@ -36,6 +36,7 @@ h1 {
 h2 {
     font-family: 'Brush Script MT', 'Pacifico', 'Dancing Script', cursive, Arial, sans-serif;
     font-size: 3em;
+    text-align: center;
 }
 
 nav ul {
@@ -98,6 +99,66 @@ nav ul .separator {
     background: #ffffff;
 }
 
+.contacto-form {
+    background: #444; /* gris oscuro */
+    padding: 25px 30px;
+    border-radius: 14px;
+    margin: 40px auto 30px auto;
+    max-width: 420px;
+    box-shadow: 0 4px 24px rgba(34,34,34,0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #b22222; /* rojo vintage */
+}
+
+.contacto-form label {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 6px;
+    align-self: flex-start;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid #b22222;
+    border-radius: 7px;
+    font-size: 1em;
+    margin-bottom: 16px;
+    font-family: inherit;
+    background: #222;
+    color: #fff;
+    box-sizing: border-box;
+    transition: border 0.2s;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+    border: 1.5px solid #fff;
+    outline: none;
+}
+
+.contacto-form button {
+    padding: 12px 28px;
+    background-color: #b22222;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(34,34,34,0.12);
+}
+
+.contacto-form button:hover {
+    background-color: #fff;
+    color: #b22222;
+}
+
 /* --- Responsive styles for mobile --- */
 @media (max-width: 700px) {
     h1 {
@@ -106,6 +167,7 @@ nav ul .separator {
     }
     h2, h3 {
         font-size: 1.3em;
+        text-align: center;
     }
     nav ul {
         flex-direction: column;
@@ -145,6 +207,7 @@ nav ul .separator {
     }
     .contacto-form {
         padding: 15px 5vw;
+        max-width: 98vw;
     }
     footer {
         padding: 10px 5vw;
