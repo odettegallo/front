@@ -163,3 +163,31 @@ footer {
     background-color: #222; /* negro vintage */
     color: #fff;
 }
+
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        background: #444;
+        border-bottom: 3px solid #b22222;
+        width: 100%;
+        padding: 0;
+    }
+    nav ul li {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    nav ul li a {
+        display: block;
+        width: 100vw;
+        text-align: center;
+        font-size: 1.3em;
+        padding: 14px 0;
+        border-bottom: 1px solid #333;
+        border-radius: 0;
+    }
+    nav ul .separator {
+        display: none;
+    }
+}
