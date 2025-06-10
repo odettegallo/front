@@ -236,7 +236,7 @@ nav ul .separator {
     }
     .productos img {
         width: 45vw;
-        max-width: 350px;
+        max-width: 280px;
     }
     .contacto-form {
         padding: 20px 10vw;
@@ -266,6 +266,8 @@ nav ul .separator {
     .productos img {
         width: 300px;
         max-width: 300px;
+        padding: auto;
+     
     }
     .contacto-form {
         padding: 25px 30px;
