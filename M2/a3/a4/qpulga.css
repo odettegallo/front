@@ -89,7 +89,8 @@ nav ul .separator {
 .productos img {
     width: 90vw;
     max-width: 300px;
-    height: auto;
+    height: 90vw;
+    max-height: 300px;
     object-fit: contain;
     border-radius: 10px;
     margin: 10px auto;
@@ -201,7 +202,8 @@ nav ul .separator {
     .productos img {
         width: 98vw;
         max-width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: contain;
         margin: 10px auto;
         display: block;
     }
