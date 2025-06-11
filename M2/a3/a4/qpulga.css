@@ -19,7 +19,7 @@ header {
 h1 {
     margin: 0;
     color: #c2002f; /* rojo charol */
-    font-size: 5em;
+    font-size: 5.5em;
     letter-spacing: 4px;
     font-family: 'Brush Script MT', 'Pacifico', 'Dancing Script', cursive, Arial, sans-serif;
     text-shadow: 4px 4px 18px #b22222, 0 0 12px #fff, 2px 2px 0 #222;
@@ -181,7 +181,7 @@ footer {
         padding: 8px 10px;
     }
     h2, h3 {
-        font-size: 1.3em;
+        font-size: 1.5em;
         text-align: center;
     }
     nav ul {
