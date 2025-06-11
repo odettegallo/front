@@ -212,6 +212,7 @@ footer {
         margin: 10px;
         padding: 0 5vw;
     }
+
     .productos img {
         width: 98vw;
         max-width: 100%;
@@ -252,6 +253,7 @@ footer {
     .productos img {
         width: 45vw;
         max-width: 280px;
+        margin: auto;
     }
     .contacto-form {
         padding: 20px 10vw;
@@ -280,6 +282,12 @@ footer {
     .bienvenida, .productos {
         margin: 20px;
         padding: 0 15vw;
+    }
+    .productos .row {
+        gap: 2.5rem !important; /* Espacio horizontal y vertical entre columnas */
+    }
+    .productos img {
+        margin: 5px auto !important; /* Más separación vertical */
     }
     .productos img {
         width: 300px;
@@ -397,4 +405,5 @@ footer {
     max-width: 100vw !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
+
 }
