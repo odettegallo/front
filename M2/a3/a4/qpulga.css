@@ -1,10 +1,11 @@
 body {
-    font-family: "Segoe UI", "Arial Rounded MT Bold", "Quicksand", Arial, sans-serif;
+    font-family: 'Playfair Display', 'Didot', 'Bodoni MT', 'Times New Roman', serif;
     font-size: 1.1em;
     margin: 0;
     background-color: #222; /* negro vintage */
     color: #fff; /* blanco */
 }
+
 
 header {
     text-align: center;
@@ -18,7 +19,7 @@ header {
 h1 {
     margin: 0;
     color: #c2002f; /* rojo charol */
-    font-size: 4.5em;
+    font-size: 5em;
     letter-spacing: 4px;
     font-family: 'Brush Script MT', 'Pacifico', 'Dancing Script', cursive, Arial, sans-serif;
     text-shadow: 4px 4px 18px #b22222, 0 0 12px #fff, 2px 2px 0 #222;
