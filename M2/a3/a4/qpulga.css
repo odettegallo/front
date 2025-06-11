@@ -212,7 +212,6 @@ footer {
         margin: 10px;
         padding: 0 5vw;
     }
-
     .productos img {
         width: 98vw;
         max-width: 100%;
@@ -253,7 +252,6 @@ footer {
     .productos img {
         width: 45vw;
         max-width: 280px;
-        margin: auto;
     }
     .contacto-form {
         padding: 20px 10vw;
@@ -263,6 +261,12 @@ footer {
         font-size: 1.07em;
         border-top: 3px solid #b22222;
         box-shadow: 0 -2px 12px rgba(34,34,34,0.13);
+    }
+    .productos .row {
+        gap: 2.5rem !important; /* Espacio horizontal y vertical entre columnas en tablet */
+    }
+    .productos img {
+        margin: 1px auto !important; /* Más separación vertical en tablet */
     }
 }
 
@@ -282,12 +286,6 @@ footer {
     .bienvenida, .productos {
         margin: 20px;
         padding: 0 15vw;
-    }
-    .productos .row {
-        gap: 2.5rem !important; /* Espacio horizontal y vertical entre columnas */
-    }
-    .productos img {
-        margin: 5px auto !important; /* Más separación vertical */
     }
     .productos img {
         width: 300px;
@@ -311,6 +309,19 @@ footer {
         font-size: 1.15em;
         border-top: 4px solid #b22222;
         box-shadow: 0 -4px 18px rgba(34,34,34,0.12);
+    }
+    .productos .row {
+        flex-wrap: nowrap !important;   /* Fuerza que las columnas no se envuelvan */
+        gap: 2.5rem !important;         /* Espacio entre imágenes */
+    }
+    .productos .col-12,
+    .productos .col-sm-6,
+    .productos .col-lg-4 {
+        flex: 1 1 0;
+        max-width: 33.33%;
+    }
+    .productos img {
+        margin: 30px auto !important;
     }
 }
 
