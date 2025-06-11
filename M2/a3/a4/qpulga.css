@@ -127,7 +127,7 @@ nav ul .separator {
     padding: 10px;
     border: 1.5px solid #b22222;
     border-radius: 7px;
-    font-size: 1em;
+    font-size: 1.1em;
     margin-bottom: 16px;
     font-family: inherit;
     background: #222;
@@ -181,7 +181,7 @@ footer {
         padding: 8px 10px;
     }
     h2, h3 {
-        font-size: 1.5em;
+        font-size: 1.7em;
         text-align: center;
     }
     nav ul {
