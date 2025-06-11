@@ -184,31 +184,6 @@ footer {
         font-size: 1.7em;
         text-align: center;
     }
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        background: #444;
-        border-bottom: 3px solid #b22222;
-        width: 100%;
-        padding: 0;
-    }
-    nav ul li {
-        width: 100%;
-        justify-content: center;
-        margin: 0;
-    }
-    nav ul li a {
-        display: block;
-        width: 100vw;
-        text-align: center;
-        font-size: 1.3em;
-        padding: 14px 0;
-        border-bottom: 1px solid #333;
-        border-radius: 0;
-    }
-    nav ul .separator {
-        display: none;
-    }
     .bienvenida, .productos {
         margin: 10px;
         padding: 0 5vw;
@@ -241,10 +216,6 @@ footer {
     }
     h2, h3 {
         font-size: 2em;
-    }
-    nav ul li a {
-        font-size: 1.5em;
-        padding: 12px 10px;
     }
     .bienvenida, .productos {
         margin: 15px;
@@ -279,10 +250,6 @@ footer {
     }
     h2 {
         font-size: 3em;
-    }
-    nav ul li a {
-        font-size: 2.1em;
-        padding: 10px 15px;
     }
     .bienvenida, .productos {
         margin: 20px;
