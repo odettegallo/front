@@ -54,16 +54,3 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }, 1000); // Actualiza cada segundo
 
-    document.addEventListener("DOMContentLoaded", function sound() {
-    // ...código existente...
-    // Reproducir el audio automáticamente (si el navegador lo permite)
-    const audio = document.getElementById('sonoraAudio');
-    if (audio) {
-        audio.volume = 0.5;
-        audio.play().catch(() => {
-            // Algunos navegadores requieren interacción del usuario
-            document.body.addEventListener('click', () => audio.play(), { once: true });
-        });
-    }
-});
-    
