@@ -13,3 +13,22 @@ return fecha, `Hoy es ${fecha} y son las ${new Date().toLocaleTimeString('es-ES'
 console.log(mostrarFecha());
 alert(mostrarFecha());
 
+function countdown() {
+    const fechaFinal = new Date("2026-01-01T00:00:00");
+    const ahora = new Date();
+    const diferencia = fechaFinal - ahora;
+
+    if (diferencia <= 0) {
+        return "¡Feliz Año Nuevo!";
+    }
+
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    // const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60));
+    const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+    return `Faltan ${dias} días, ${minutos} minutos y ${segundos} segundos para el Año Nuevo.`;
+
+}
+console.log(countdown());
+alert(countdown());

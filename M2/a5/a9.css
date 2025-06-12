@@ -25,3 +25,12 @@ p {
   margin: 20px auto;
   max-width: 800px;
 }
+
+tiemporestante {
+  font-family: 'Courier New', monospace;
+  font-size: 2.5em;
+  color: #ff0000;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  margin-top: 30px;
+}
