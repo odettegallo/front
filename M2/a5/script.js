@@ -44,14 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error("El elemento con id 'tiemporestante' no se encontró.");
     }
 });
-// setInterval(() => {  
-    //     let div = document.getElementById("tiemporestante");
-    //     if (div) {
-    //         div.innerHTML = countdown();
-    //     } else {
-    //         console.error("El elemento con id 'tiemporestante' no se encontró.");
-    //     }
-    // }, 1000); // Actualiza cada segundo
+
     setInterval(() => {
         let div = document.getElementById("tiemporestante");
         if (div) {
@@ -60,6 +53,17 @@ document.addEventListener("DOMContentLoaded", function() {
             console.error("El elemento con id 'tiemporestante' no se encontró.");
         }
     }, 1000); // Actualiza cada segundo
-    // setInterval(() => {  
 
+    document.addEventListener("DOMContentLoaded", function sound() {
+    // ...código existente...
+    // Reproducir el audio automáticamente (si el navegador lo permite)
+    const audio = document.getElementById('sonoraAudio');
+    if (audio) {
+        audio.volume = 0.5;
+        audio.play().catch(() => {
+            // Algunos navegadores requieren interacción del usuario
+            document.body.addEventListener('click', () => audio.play(), { once: true });
+        });
+    }
+});
     
