@@ -30,7 +30,36 @@ function countdown() {
     return `Faltan ${dias} días, ${minutos} minutos y ${segundos} segundos para el Año Nuevo.`;
 
 }
-console.log(countdown());
-alert(countdown());
+// console.log(countdown());
+// alert(countdown());
 
+// let div =document.getElementById("tiemporestante");
+// div.innerHTML = countdown();
 
+document.addEventListener("DOMContentLoaded", function() {
+    let div = document.getElementById("tiemporestante");
+    if (div) {
+        div.innerHTML = countdown();
+    } else {
+        console.error("El elemento con id 'tiemporestante' no se encontró.");
+    }
+});
+// setInterval(() => {  
+    //     let div = document.getElementById("tiemporestante");
+    //     if (div) {
+    //         div.innerHTML = countdown();
+    //     } else {
+    //         console.error("El elemento con id 'tiemporestante' no se encontró.");
+    //     }
+    // }, 1000); // Actualiza cada segundo
+    setInterval(() => {
+        let div = document.getElementById("tiemporestante");
+        if (div) {
+            div.innerHTML = countdown();
+        } else {
+            console.error("El elemento con id 'tiemporestante' no se encontró.");
+        }
+    }, 1000); // Actualiza cada segundo
+    // setInterval(() => {  
+        
+    
