@@ -1,14 +1,14 @@
 function mostrarFecha() {
     const fecha = new Date();
-    const dia = fecha.getDate().toString().padStart(2, '0');
-    const mes = (fecha.getMonth() + 1).toString().padStart(2, '0'); // Los meses empiezan desde 0
+    const dia = fecha.getDate();
+    const mes = fecha.getMonth() + 1; // Los meses empiezan desde 0
     const anio = fecha.getFullYear();
     
+    // Formatear la fecha como dd/mm/yyyy
     const fechaFormateada = `${dia}/${mes}/${anio}`;
     
-    document.getElementById("fecha").innerText = 'Hoy es $fechaFormateada y la hora es ' + fecha.toLocaleTimeString();
-    document.getElementById("fecha").style.color = "blue";
+    // Mostrar la fecha en el elemento con id "fecha"
+    document.getElementById("fecha").innerText = fechaFormateada;
 
-    alert("La fecha y hora actual es: " + fechaFormateada + ' ' + fecha.toLocaleTimeString());
-    document.getElementById("fecha").style.fontSize = "20px";
+alert("La fecha actual es: " + fechaFormateada);
 }

@@ -3,3 +3,13 @@ body {
   background-size: cover;
   background-repeat: repeat;
 }
+
+h1 {
+  color: #e4a30c;
+  accent-color: #e4a30c;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 5.5em;
+  margin-top: 40px;
+}
