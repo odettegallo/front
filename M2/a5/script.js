@@ -37,7 +37,7 @@ function countdown() {
 // div.innerHTML = countdown();
 
 document.addEventListener("DOMContentLoaded", function() {
-    let div = document.getElementById("tiemporestante");
+    let div = document.getElementById("hora");
     if (div) {
         div.innerHTML = countdown();
     } else {
