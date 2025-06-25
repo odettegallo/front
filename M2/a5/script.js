@@ -9,7 +9,7 @@ const min = "minutos";
 const segundo = {second: '2-digit'};
 const seg = "segundos";
 const fecha = new Date().toLocaleDateString('es-ES', opciones, hora, hr, minuto, min, segundo, seg);
-return fecha, `Hoy es ${fecha} y son las ${new Date().toLocaleTimeString('es-ES', hora)} ${hr}, ${new Date().toLocaleTimeString('es-ES', minuto)} ${min} y ${new Date().toLocaleTimeString('es-ES', segundo)} ${seg}.`;
+return fecha, `Hoy es ${fecha} y son las ${new Date().toLocaleTimeString('es-ES', hora)} ${hr}, ${new Date().toLocaleTimeString('es-ES', minuto)} ${min} con ${new Date().toLocaleTimeString('es-ES', segundo)} ${seg}.`;
 }
 console.log(mostrarFecha());
 alert(mostrarFecha());
