@@ -1,3 +1,5 @@
+//Odette Gallo Martínez// Ejercicio de carrito de compras
+// Este código simula un carrito de compras con productos, selección, cantidad y cálculo de total
 // Paso 1: Crear productos
 let producto1 = "Mouse inalámbrico";
 let precio1 = 12000;
