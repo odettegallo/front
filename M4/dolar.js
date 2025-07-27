@@ -1,3 +1,5 @@
+//Odette Gallo Martínez
+
 function convertirADolares(montoUSD) {
   const tipoCambio = 745;
 
