@@ -1,3 +1,5 @@
+//Odette Gallo Martínez
+
 function evaluarNumero(numero) {
   // Validación del rango permitido
   if (numero <= 1 || numero > 100) {
