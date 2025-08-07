@@ -1,14 +1,14 @@
 //Odette Gallo Martínez// Ejercicio de carrito de compras
 // Este código simula un carrito de compras con productos, selección, cantidad y cálculo de total
 // Paso 1: Crear productos
-let producto1 = "Mouse inalámbrico";
-let precio1 = 12000;
+const producto1 = "Mouse inalámbrico";
+const precio1 = 12000;
 
-let producto2 = "Teclado mecánico";
-let precio2 = 25000;
+const producto2 = "Teclado mecánico";
+const precio2 = 25000;
 
-let producto3 = "Monitor LED 24''";
-let precio3 = 80000;
+const producto3 = "Monitor LED 24''";
+const precio3 = 80000;
 
 // Paso 2: Selección y cantidad
 let productoSeleccionado = producto2; // Simulamos que el usuario eligió el teclado
