@@ -33,7 +33,7 @@ do {
     // El usuario selecciona un producto
     if (seleccion === "1" || seleccion === "2" || seleccion === "3") {
         const cantidad = parseInt(prompt(`
-            Has seleccionado el producto ${eval('producto' + seleccion)}.
+            Has seleccionado el producto ${seleccion}.
             Ingresa la cantidad que deseas:
         `));
 
