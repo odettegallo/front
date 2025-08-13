@@ -1,15 +1,20 @@
-// for (i = 0; i < arregloNumeros.length; )
-
-const arregloNumeros = [1024, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-let numero = prompt("Ingrese un número para buscar si se encuentra en el arreglo:");
-for (let i = 0; i < arregloNumeros.length; i++) {
-  if (arregloNumeros[i] == numero) {
-    alert("El número " + numero + " se encuentra en el arreglo.");
-    break;
-  }
-  if (i == arregloNumeros.length - 1) {
-    alert("El número " + numero + " no se encuentra en el arreglo.");
+const arregloDesordenado = [1024, 3, 512, 7, 9, 11, 13, 15, 17, 19];
+for (let i = 0; i < arregloDesordenado.length; i++) {
+  for (let j = i + 1; j < arregloDesordenado.length; j++) {
+    if (arregloDesordenado[i] > arregloDesordenado[j]) {
+      let ordenar = arregloDesordenado[i];
+      arregloDesordenado[i] = arregloDesordenado[j];
+      arregloDesordenado[j] = ordenar;
+    }
   }
 }
+
+console.log(arregloDesordenado); // [3, 7, 9, 11, 13, 15, 17, 19, 512, 1024]
+
+
+
+
+// arregloDesordenado.sort(function(a, b) {return a - b;});
+// console.log(arregloDesordenado); // [3, 7, 9, 11, 13, 15, 17, 19, 512, 1024]    
+// return;
 
