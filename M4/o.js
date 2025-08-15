@@ -48,3 +48,23 @@ esPrimo(7);  // Debería imprimir: 7 es un número primo.
 esPrimo(10); // Debería imprimir: 10 no es un número primo.
 esPrimo(2);  // Debería imprimir: 2 es un número primo.
 esPrimo(1);  // Debería imprimir: 1 no es un número primo.
+
+// 3.- Cree una función que dado un número n entero y menor 
+// que 100 imprima la cuenta regresiva, es decir si n es 5 deberá 
+// imprimir 5,4,3,2,1.  
+
+function cuentaRegresiva(n) {
+  if (n < 1 || n >= 100 || !Number.isInteger(n)) {
+    throw new Error("El número debe ser un entero entre 1 y 99.");
+  }
+  
+  let resultado = [];
+  for (let i = n; i > 0; i--) {
+    resultado.push(i);
+  }
+  
+  return resultado.join(",");
+}
+
+console.log(cuentaRegresiva(5)); // "5,4,3,2,1"
+console.log(cuentaRegresiva(3)); // "3,2,1"
