@@ -1,49 +1,51 @@
 class Person {
-    constructor(first, last, age, gender, interests) { 
-this.name = { 
-'first': first, 
-'last' : last 
-}; 
-this.age = age; 
-this.gender = gender; 
-this.interests = interests; 
+  constructor(first, last, age, gender, interests) {
+    this.name = {
+      first: first,
+      last: last,
+    };
+    this.age = age;
+    this.gender = gender;
+    this.interests = interests;
+  }
+
+  bio() {
+    let pronoun;
+    if (this.gender === 'male') {
+      pronoun = 'He';
+    } else if (this.gender === 'female') {
+      pronoun = 'She';
+    } else {
+      pronoun = 'They'; // Usar 'They' para un género no especificado, es más inclusivo.
     }
 
-bio() { 
-let myGender = this.gender;
-if (myGender === 'male') { 
-myGender = 'He';
-}
-else if (myGender === 'female') { 
-myGender = 'She';
-}
-else {
-myGender = 'undefined';
-}
+    let interestsList;
+    if (this.interests.length > 2) {
+      const firstTwoInterests = this.interests.slice(0, 2).join(' and ');
+      interestsList = `${firstTwoInterests} and others`;
+    } else if (this.interests.length === 2) {
+      interestsList = this.interests.join(' and ');
+    } else if (this.interests.length === 1) {
+      interestsList = this.interests[0];
+    } else {
+      interestsList = 'nothing in particular';
+    }
 
-let myInterests = this.interests;
-if (myInterests.length > 2) {
-myInterests = myInterests.slice(0, 2).join(' and ') + ' and others';
-}
-else if (myInterests.length === 2) {
-myInterests = myInterests.join(' and ');
-}
-else if (myInterests.length === 1) {
-myInterests = myInterests[0];
-}
+    console.log(`${this.name.first} ${this.name.last} is ${this.age} years old. ${pronoun} likes ${interestsList}.`);
+  }
 
-console.log(this.name.first + ' ' + this.name.last + ' is ' + this.age + ` years old. ${myGender} likes ` 
-+ this.interests[0] + this.interests[1] + '.'); 
-}; 
-
-greeting() { 
-console.log('Hi! I\'m ' + this.name.first + '.'); 
-}; 
+  greeting() {
+    console.log(`Hi! I'm ${this.name.first}.`);
+  }
 }
 
 const person1 = new Person('Bob', 'Smith', 32, 'male', ['music', 'skiing', 'reading', 'gaming']);
 const person2 = new Person('Bo', 'Smith', 32, 'female', ['music', 'skiing']);
+const person3 = new Person('Alex', 'Doe', 28, 'non-binary', ['drawing']);
+const person4 = new Person('Sam', 'Jones', 45, 'male', []);
 
-const myGreeting = person1.greeting();
-const myBio = person1.bio();
-const myBio2 = person2.bio();
+person1.bio();
+person2.bio();
+person3.bio();
+person4.bio();
+person1.greeting();
