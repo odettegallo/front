@@ -19,14 +19,9 @@ class Person {
       pronoun = 'They'; // Usar 'They' para un género no especificado, es más inclusivo.
     }
 
-    let interestsList;
-    if (this.interests.length > 2) {
-      const firstTwoInterests = this.interests.slice(0, 2).join(' and ');
-      interestsList = `${firstTwoInterests} and others`;
-    } else if (this.interests.length === 2) {
-      interestsList = this.interests.join(' and ');
-    } else if (this.interests.length === 1) {
-      interestsList = this.interests[0];
+let interestsList;
+    if (this.interests.length > 0) {
+      interestsList = this.interests.join(', ');
     } else {
       interestsList = 'nothing in particular';
     }
