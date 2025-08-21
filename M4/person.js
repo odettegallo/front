@@ -39,8 +39,27 @@ const person2 = new Person('Bo', 'Smith', 32, 'female', ['music', 'skiing']);
 const person3 = new Person('Alex', 'Doe', 28, 'non-binary', ['drawing']);
 const person4 = new Person('Sam', 'Jones', 45, 'male', []);
 
+const people = Object.create(person1);
+
 person1.bio();
 person2.bio();
 person3.bio();
 person4.bio();
 person1.greeting();
+people.greeting();
+
+const TodasLasPropiedades = listAllProperties(person1);
+function listAllProperties(obj) {
+  const properties = [];
+  for (let prop in obj) {
+    if (obj.hasOwnProperty(prop)) {
+      properties.push(prop);
+    }
+  }
+  return properties;
+}
+console.log(TodasLasPropiedades); // Muestra todas las propiedades del objeto person1
+console.log(Object.getOwnPropertyNames(person1)); // Muestra todas las propiedades del objeto person1
+console.log(Object.keys(person1)); // Muestra las claves del objeto person1
+console.log(Object.values(person1)); // Muestra los valores del objeto person1
+console.log(Object.entries(person1)); // Muestra las entradas del objeto person1
