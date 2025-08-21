@@ -63,3 +63,10 @@ console.log(Object.getOwnPropertyNames(person1)); // Muestra todas las propiedad
 console.log(Object.keys(person1)); // Muestra las claves del objeto person1
 console.log(Object.values(person1)); // Muestra los valores del objeto person1
 console.log(Object.entries(person1)); // Muestra las entradas del objeto person1
+
+// Ejemplo de uso de Set para eliminar duplicados en un arreglo
+const arregloConDuplicados = ['saludo', 'edad', 'saludo', 'nombre'];
+const arregloSinDuplicados = [...new Set(arregloConDuplicados)];
+console.log(arregloSinDuplicados); // ['saludo', 'edad', 'nombre']
+
+
