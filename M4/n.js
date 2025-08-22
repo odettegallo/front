@@ -26,35 +26,18 @@ console.log("El número mayor es ",mayor); // 1024
 //día de la semana
 
 const diasSemana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+let numeroDia;
 
-let numeroDia = prompt("Ingrese un número del 1 al 7 para obtener el día de la semana:");
-while (numeroDia < 0 || numeroDia > 7) {
-  alert("Número inválido. Ingrese un número del 1 al 7:");
-  numeroDia = prompt("Ingrese un número del 1 al 7 para obtener el día de la semana:");
-switch (parseInt(numeroDia)) {
-    case 1:
-      prompt("El día es: " + diasSemana[0]);
-      break;
-    case 2:
-      prompt("El día es: " + diasSemana[1]);
-      break;
-    case 3:
-      prompt("El día es: " + diasSemana[2]);
-      break;
-    case 4:
-      prompt("El día es: " + diasSemana[3]);
-      break;
-    case 5:
-      prompt("El día es: " + diasSemana[4]);
-      break;
-    case 6:
-      prompt("El día es: " + diasSemana[5]);
-      break;
-    case 7:
-      prompt("El día es: " + diasSemana[6]);
-      break;
+do {
+  numeroDia = parseInt(prompt("Ingrese un número del 1 al 7 para obtener el día de la semana:"));
+
+  if (numeroDia >= 1 && numeroDia <= 7) {
+    alert("El día es: " + diasSemana[numeroDia - 1]);
+    break; // Salir del bucle una vez que se ingrese un número válido
+  } else {
+    alert("Número inválido, por favor ingrese un número del 1 al 7.");
   }
-}
+} while (true);
 
 //buscar un número en un arreglo
 
