@@ -1,0 +1,72 @@
+class Person {
+  constructor(first, last, age, gender, interests) {
+    this.name = {
+      first: first,
+      last: last,
+    };
+    this.age = age;
+    this.gender = gender;
+    this.interests = interests;
+  }
+
+  bio() {
+    let pronoun;
+    if (this.gender === 'male') {
+      pronoun = 'He';
+    } else if (this.gender === 'female') {
+      pronoun = 'She';
+    } else {
+      pronoun = 'They'; // Usar 'They' para un género no especificado, es más inclusivo.
+    }
+
+let interestsList;
+    if (this.interests.length > 0) {
+      interestsList = this.interests.join(', ');
+    } else {
+      interestsList = 'nothing in particular';
+    }
+
+    console.log(`${this.name.first} ${this.name.last} is ${this.age} years old. ${pronoun} likes ${interestsList}.`);
+  }
+
+  greeting() {
+    console.log(`Hi! I'm ${this.name.first}.`);
+  }
+}
+
+const person1 = new Person('Bob', 'Smith', 32, 'male', ['music', 'skiing', 'reading', 'gaming']);
+const person2 = new Person('Bo', 'Smith', 32, 'female', ['music', 'skiing']);
+const person3 = new Person('Alex', 'Doe', 28, 'non-binary', ['drawing']);
+const person4 = new Person('Sam', 'Jones', 45, 'male', []);
+
+const people = Object.create(person1);
+
+person1.bio();
+person2.bio();
+person3.bio();
+person4.bio();
+person1.greeting();
+people.greeting();
+
+const TodasLasPropiedades = listAllProperties(person1);
+function listAllProperties(obj) {
+  const properties = [];
+  for (let prop in obj) {
+    if (obj.hasOwnProperty(prop)) {
+      properties.push(prop);
+    }
+  }
+  return properties;
+}
+console.log(TodasLasPropiedades); // Muestra todas las propiedades del objeto person1
+console.log(Object.getOwnPropertyNames(person1)); // Muestra todas las propiedades del objeto person1
+console.log(Object.keys(person1)); // Muestra las claves del objeto person1
+console.log(Object.values(person1)); // Muestra los valores del objeto person1
+console.log(Object.entries(person1)); // Muestra las entradas del objeto person1
+
+// Ejemplo de uso de Set para eliminar duplicados en un arreglo
+const arregloConDuplicados = ['saludo', 'edad', 'saludo', 'nombre'];
+const arregloSinDuplicados = [...new Set(arregloConDuplicados)];
+console.log(arregloSinDuplicados); // ['saludo', 'edad', 'nombre']
+
+

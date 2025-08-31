@@ -11,8 +11,8 @@ const producto3 = "Monitor LED 24''";
 const precio3 = 80000;
 
 // Paso 2: Selección y cantidad
-const productoSeleccionado = producto2; // Simulamos que el usuario eligió el teclado
-const cantidad = 2;
+let productoSeleccionado = producto2; // Simulamos que el usuario eligió el teclado
+let cantidad = 2;
 let precioUnitario;
 
 // Determinar el precio según el producto
